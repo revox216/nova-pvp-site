@@ -1,0 +1,1 @@
+</main><footer>© <?=date("Y")?> NOVA PVP · Website developed by <?php if(DEV_DISCORD_ID):?><a href="https://discord.com/users/<?=h(DEV_DISCORD_ID)?>" target="_blank"><?=h(DEV_NAME)?></a><?php else:?><?=h(DEV_NAME)?><?php endif;?></footer><script src="/assets/app.js"></script><script src="/assets/player.js"></script><script src="/assets/nav.js"></script></body></html>

@@ -1,0 +1,9 @@
+<?php $_me=user();$_pg=basename($_SERVER['SCRIPT_NAME']);$_nav=['shop.php'=>'Shop','staff.php'=>'Staff','apply.php'=>'Apply','partner.php'=>'Partner'];?>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NOVA_PVP</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/style.css"></head><body>
+<nav><a class="brand" href="/index.php"><img src="/assets/logo.png"><span>NOVA <b>PVP</b></span></a><div class="links">
+<?php foreach($_nav as $_hr=>$_lb):?><a href="/<?=$_hr?>" class="<?=$_pg==$_hr?'on':''?>"><?=$_lb?></a><?php endforeach;?>
+<?php if(can('discord_stats')):?><a href="/discord-stats.php" class="<?=$_pg=='discord-stats.php'?'on':''?>">Discord Stats</a><?php endif;?><?php if(is_owner()):?><a href="/report.php" class="<?=$_pg=='report.php'?'on':''?>">Report</a><?php endif;?><?php if(is_owner()):?><a href="/discord-logs.php" class="<?=$_pg=='discord-logs.php'?'on':''?>">Discord Logs</a><?php endif;?><?php if(perms()):?><a href="/admin/" class="<?=strpos($_SERVER['SCRIPT_NAME'],'/admin/')!==false?'on':''?>">Dashboard</a><?php endif;?></div>
+<div class="mp" id="mp" hidden><button id="pp" title="Play / Pause">▶</button><div class="mp-title" id="pt"></div><button id="plb" title="Songs and volume">♫</button>
+<div class="mp-panel" id="mpp"><div class="mp-now" id="pn2"></div><div class="mp-ctrl"><button id="pb" title="Previous">⏮</button><button id="pp2" title="Play / Pause">▶</button><button id="pn" title="Next">⏭</button><button id="pm" title="Mute">🔊</button><input id="pv" type="range" min="0" max="100" title="Volume"></div><ul id="pl"></ul></div></div>
+<div class="me"><img src="<?=h($_me['avatar'])?>"><span><?=h($_me['username'])?></span><a class="btn sm" href="/logout.php">Logout</a></div></nav><main>

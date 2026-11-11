@@ -1,0 +1,12 @@
+{
+  "token": "MTU2MzkwNTE3MzcwNzgyNTIwMg.GarXnl.M05Vbn0m0w40SbqqdJQ9-oaxD9jMZoTYm8yJnw",
+  "guildId": "1561737459400974527",
+  "dbPath": "../data/nova.sqlite",
+  "ticketPanelChannelId": "1564281396170858592",
+  "closedCategoryId": "1564281224334413985",
+  "categories": { "support": "1564281182865195008", "ban_appeal": "1564281187462283406", "bug_report": "1564281206256701621", "partnership": "1564281210820366478" },
+  "staffRoleIds": [1564281036278464582,1564281025172082709,1564281020042444800,1564280990212554812],
+  "cheatersChannelId": "1564281558414663761",
+  "cheaterRoleId": "1564615152920170517",
+  "ownerIds": ["1398045790655483938"]
+}
